@@ -1,0 +1,19 @@
+jupyter
+ipykerner
+
+# Excel data loading and preparation
+pandas
+openpyxl
+numpy
+
+# FinBERT sentiment analysis
+torch
+transformers
+
+# Statistical analysis and regression
+scipy
+statsmodels
+
+# Charts and diagnostics
+matplotlib
+seaborn
