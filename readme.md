@@ -1,6 +1,8 @@
 # Context or Culture? Explaining Sentiment in Annual CEO Communication through Leadership Contexts and National Environments
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](#requirements)
+
+
 **Author** : Saowalak De Rossi
 **Research area:** CEO communication, leadership contexts, national environments and natural language processing
 
