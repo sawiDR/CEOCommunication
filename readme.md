@@ -32,14 +32,14 @@ CEOCommunication/
 ├── data/                                       # Source reports and coded dataset
 ├── docs/                                       # Thesis framework and literature
 ├── notebooks/                                  # Sequential analysis notebooks
-│   ├── 01_data_exploration.ipynb         
-│   ├── 02_sentiment_analysis.ipynb                   
+│   ├── 01_data_exploration.ipynb       
+│   ├── 02_sentiment_analysis.ipynb                 
 │   ├── 03_sentiment_exploration.ipynb   
-│   ├── 04_regression_analysis.ipynb      
+│   ├── 04_regression_analysis.ipynb    
 │   ├── 05_regression_exploration.ipynb   
-│   ├── 06_extension.ipynb                       
-├── results/                                  
-│   ├── extensions/                           
+│   ├── 06_extension.ipynb                     
+├── results/                                
+│   ├── extensions/                         
 │   ├── figures/
 │   ├── tables/
 project
@@ -61,7 +61,7 @@ project
 | `CEO`                 | CEO associated with the announcement                                                                       |
 | `Communication_type`  | Communication format and, where applicable, subcategory                                                    |
 | `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE` or `STAKE`                  |
-| `Information_valence` | `Positive`, `Neutral/Mixed` or `Negative`                                                            |
+| `Information_valence` | `Positive`, `Neutral` or `Negative`                                                                  |
 | `Comment`             | A brief explanation of leadership context labeling and the`Information_valence`                          |
 | `Text`                | Full original data segment                                                                                 |
 
