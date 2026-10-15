@@ -54,16 +54,22 @@ project
 | Column                  | Meaning and convention                                                                                     |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------- |
 | `ID`                  | Unique identifier that identifies the segment's order and source ex. DEU25A100                             |
-| `Company`             | Lowercase company name                                                                                     |
+| `Text`                | Full original data segment                                                                                 |
+| `Text_type`           | body_text, body_text_list, title, quote, heading, question, answer                                         |
+| `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER`                 |
+| `Coding_ambiguity`    | True or False                                                                    |
+| `Alternative_context` | If Coding_ambiguity is True, assign one dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER` otherwise empty           |
+| `Information_valence` | `positive`, `neutral` or `negative`                                                                  |
+| `Communication_type`             | letter, message, interview                                                                                |
+| `Source_type`         | annual_report, sustainability_report, integrated_report                                                                                    |
+| `Company`             | `adidas`, `puma`, `asics` or `mizuno`                                                                                   |
 | `Country`             | `DEU` or `JPN`                                                                                         |
 | `Year`                | Numeric reporting year in YYYY format                                                                      |
 | `Covid`               | Specific period indicator for COVID-19 : 2024 and 2025 →`False` ; 2020, 2021, 2022 and 2023 → `True` |
 | `CEO`                 | CEO associated with the announcement                                                                       |
-| `Communication_type`  | Communication format and, where applicable, subcategory                                                    |
-| `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE` or `STAKE`                  |
-| `Information_valence` | `Positive`, `Neutral` or `Negative`                                                                  |
-| `Comment`             | A brief explanation of leadership context labeling and the`Information_valence`                          |
-| `Text`                | Full original data segment                                                                                 |
+| `Communicator_role`  | `ceo` or `president`                                                       |
+| `Communicator_name`  | Name of the `Communicator_role`                  |
+| `Comment`             | A brief explanation of leadership context labeling and/or the information valence                        |                                                                            |
 
 **Manual coding protocol**
 
@@ -86,6 +92,8 @@ project
    | `CHALL`  | Challenges, Crisis & Adaptation        | Problems, threats, uncertainty, disruptions and responses to adverse internal or external conditions                 |
    | `PEOPLE` | People & Organization                  | Employees, talent, management, organizational structure, workplace practices and corporate culture                   |
    | `STAKE`  | Stakeholders, Society & Sustainability | Societal and environmental impact, stakeholder relationships, human rights and broader responsibility                |
+   | `OTHER`  | Other Leadership Communication         | Communication whose primary purpose does not correspond to any substantive category.                                 |
+
 
    Temporal orientation helps distinguish achieved growth (`PERF`) from growth ambitions (`STRAT`), but semantic meaning remains the first criterion.
 
