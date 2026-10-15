@@ -83,7 +83,7 @@ project
  | Label             | Interpretation                                                                                                                  | Illustrative case                                                        |
  | ----------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
  | `Positive`      | Favorable realized development, improvement, achievement or outcome                                                             | Revenue increased; emissions fell; an operational problem was resolved   |
- | `Neutral/Mixed` | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
+ | `Neutral` | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
  | `Negative`      | Unfavorable development, deterioration, failure or adverse outcome                                                              | Sales declined; a target was missed; jobs were cut                       |
 
 ---
