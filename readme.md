@@ -1,4 +1,4 @@
-# Context or Culture? Explaining Sentiment in Annual CEO Communication through Leadership Contexts and National Environments
+# Context or Culture? Explaining Sentiment in Annual Leadership Communication from German and Japanese Sporting-Goods Companies through Leadership Context and National Environment
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](#requirements)
 
