@@ -181,7 +181,7 @@ Run notebooks in order. After changes to source data or functions, restart the k
 ---
 
 
-Implementation references used during workflow development:
+**Implementation references used during workflow development:**
 
 - [FinBERT model card](https://huggingface.co/ProsusAI/finbert)
 - [Hugging Face tokenizer documentation](https://huggingface.co/docs/transformers/main_classes/tokenizer)
