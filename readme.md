@@ -1,8 +1,9 @@
-# Context or Culture? Explaining Sentiment in Annual CEO Communication through Leadership Contexts and National Environments
+# Context or Culture? Explaining Sentiment in Annual Leadership Communication from German and Japanese Sporting-Goods Companies through Leadership Context and National Environment
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](#requirements)
 
 **Author** : Saowalak De Rossi
+
 **Research area:** CEO communication, leadership contexts, national environments and natural language processing
 
 ## Project overview
@@ -15,13 +16,6 @@ This master's thesis examines whether sentiment in official annual CEO communica
 - **Target reporting years:** 2020–2025
 - **Sources:** official annual CEO communications of  `adidas`, `puma`, `asics` and `mizuno`
 - **Sentiment input:** english-language CEO communications, manually labelled for leadership context and information valence before BERT-based sentiment analysis
-
-#### Research questions
-
-1. How does sentiment vary across leadership contexts?
-2. How does sentiment differ between the German and Japanese companies in the sample?
-3. Do leadership contexts account for more variation in sentiment than country, after controlling for information valence, communication format and year?
-4. Does the relationship between leadership context and sentiment vary by country?
 
 ---
 
@@ -54,48 +48,44 @@ project
 | Column                  | Meaning and convention                                                                                     |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------- |
 | `ID`                  | Unique identifier that identifies the segment's order and source ex. DEU25A100                             |
-| `Company`             | Lowercase company name                                                                                     |
+| `Text`                | Full original data segment                                                                                 |
+| `Text_type`           | body_text, body_text_list, title, quote, heading, question, answer                                         |
+| `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER`                 |
+| `Coding_ambiguity`    | True or False                                                                    |
+| `Alternative_context` | If Coding_ambiguity is True, assign one dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER` otherwise empty           |
+| `Information_valence` | `positive`, `neutral` or `negative`                                                                  |
+| `Communication_type`             | letter, message, interview                                                                                |
+| `Source_type`         | annual_report, sustainability_report, integrated_report                                                                                    |
+| `Company`             | `adidas`, `puma`, `asics` or `mizuno`                                                                                   |
 | `Country`             | `DEU` or `JPN`                                                                                         |
 | `Year`                | Numeric reporting year in YYYY format                                                                      |
 | `Covid`               | Specific period indicator for COVID-19 : 2024 and 2025 →`False` ; 2020, 2021, 2022 and 2023 → `True` |
 | `CEO`                 | CEO associated with the announcement                                                                       |
-| `Communication_type`  | Communication format and, where applicable, subcategory                                                    |
-| `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE` or `STAKE`                  |
-| `Information_valence` | `Positive`, `Neutral` or `Negative`                                                                  |
-| `Comment`             | A brief explanation of leadership context labeling and the`Information_valence`                          |
-| `Text`                | Full original data segment                                                                                 |
+| `Communicator_role`  | `ceo` or `president`                                                       |
+| `Communicator_name`  | Name of the `Communicator_role`                  |
+| `Comment`             | A brief explanation of leadership context labeling and/or the information valence                        |                                                                            |
 
-**Manual coding protocol**
 
-1. Preserve the original paragraph as the default observation
-2. Retain the complete text, removing only PDF layout artifacts such as line wrapping or word breaks introduced by pagination
-3. Assign one primary leadership context according to:
+**Leadership contexts**
 
-   **Semantic meaning → Temporal orientation → Verb patterns → Keywords**
-4. For ambiguous paragraphs, use the dominant communicative purpose rather than counting keywords
-5. Split only when necessary and when independent contexts can be separated without destroying their meaning
-6. Code information valence independently of sentiment and record a concise rationale
+| Code       | Context                                | Primary focus                                                                                                        |
+| ---------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `PERF`   | Business Performance & Achievements    | Realized financial or operational results, growth market-share achievements, records and completed milestones        |
+| `STRAT`  | Strategy, Growth & Future Direction    | Future objectives, priorities, investment plans, expansion, transformation and resource allocation                   |
+| `MARKET` | Product, Brand & Market                | Products, innovation, brands, consumers, athletes, retailers, marketing, distribution and commercial market dynamics |
+| `CHALL`  | Challenges, Crisis & Adaptation        | Problems, threats, uncertainty, disruptions and responses to adverse internal or external conditions                 |
+| `PEOPLE` | People & Organization                  | Employees, talent, management, organizational structure, workplace practices and corporate culture                   |
+| `STAKE`  | Stakeholders, Society & Sustainability | Societal and environmental impact, stakeholder relationships, human rights and broader responsibility                |
+| `OTHER`  | Other Leadership Communication         | Communication whose primary purpose does not correspond to any substantive category.                                 |
 
-   **Leadership contexts**
 
-   | Code       | Context                                | Primary focus                                                                                                        |
-   | ---------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-   | `PERF`   | Business Performance & Achievements    | Realized financial or operational results, growth market-share achievements, records and completed milestones        |
-   | `STRAT`  | Strategy, Growth & Future Direction    | Future objectives, priorities, investment plans, expansion, transformation and resource allocation                   |
-   | `MARKET` | Product, Brand & Market                | Products, innovation, brands, consumers, athletes, retailers, marketing, distribution and commercial market dynamics |
-   | `CHALL`  | Challenges, Crisis & Adaptation        | Problems, threats, uncertainty, disruptions and responses to adverse internal or external conditions                 |
-   | `PEOPLE` | People & Organization                  | Employees, talent, management, organizational structure, workplace practices and corporate culture                   |
-   | `STAKE`  | Stakeholders, Society & Sustainability | Societal and environmental impact, stakeholder relationships, human rights and broader responsibility                |
+ **Information valence**
 
-   Temporal orientation helps distinguish achieved growth (`PERF`) from growth ambitions (`STRAT`), but semantic meaning remains the first criterion.
-
-   **Information valence**
-
-   | Label             | Interpretation                                                                                                                  | Illustrative case                                                        |
-   | ----------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-   | `Positive`      | Favorable realized development, improvement, achievement or outcome                                                             | Revenue increased; emissions fell; an operational problem was resolved   |
-   | `Neutral/Mixed` | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
-   | `Negative`      | Unfavorable development, deterioration, failure or adverse outcome                                                              | Sales declined; a target was missed; jobs were cut                       |
+ | Label             | Interpretation                                                                                                                  | Illustrative case                                                        |
+ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+ | `Positive`      | Favorable realized development, improvement, achievement or outcome                                                             | Revenue increased; emissions fell; an operational problem was resolved   |
+ | `Neutral` | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
+ | `Negative`      | Unfavorable development, deterioration, failure or adverse outcome                                                              | Sales declined; a target was missed; jobs were cut                       |
 
 ---
 
@@ -191,19 +181,8 @@ Run notebooks in order. After changes to source data or functions, restart the k
 
 ---
 
-## Literature
 
-- Devlin et al. (2019), *BERT*.
-- Kılınç & Arıcı (2020), *Corporate Narrative in Annual Reports: A Discourse Analysis of CEO Letters*
-- Liu, Bilal & Komal (2022), *A Corpus-Based Comparison of the Chief Executive Officer Statements in Annual Reports and Corporate Social Responsibility Reports*
-- Arvidsson (2023), *CEO talk of sustainability in CEO letters: towards the inclusion of a sustainability embeddedness and value-creation perspective*
-- Arvidsson & Sabelfeld (2023), *Adaptive framing of sustainability in CEO letters*
-- He, P., Gao, J., & Chen, W. (2023). *DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing*
-- Altarawneh (2026), *Essays on the information content of CEO letters in annual reports*.
-- Lu, Zhao & Hu (2026), *Building Corporate Identity Through Interactional Metadiscourse: A Corpus-based Study of the US and Chinese CEO Letters*
-- Nguyen (2026), *Stance in CEO Statements from U.S. and Vietnamese Banks’ Annual Reports: A Corpus-Based Cross-Cultural Study*
-
-Implementation references used during workflow development:
+**Implementation references used during workflow development:**
 
 - [FinBERT model card](https://huggingface.co/ProsusAI/finbert)
 - [Hugging Face tokenizer documentation](https://huggingface.co/docs/transformers/main_classes/tokenizer)
