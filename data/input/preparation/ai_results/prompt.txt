@@ -1,0 +1,88 @@
+**CODING FRAMEWORK**
+TASK 1 — LEADERSHIP CONTEXT CLASSIFICATION
+Classify each text segment into exactly one of the following seven mutually exclusive categories.
+PERF — Business Performance & Achievements
+Communication primarily concerning realized business performance, financial or operational results, achievements, records, or completed milestones.
+Examples: Revenue growth, profit declines, achieved business targets, and operational results.
+STRAT — Strategy, Growth & Future Direction
+Communication primarily concerning corporate strategy, future direction, long-term objectives, investment plans, expansion, transformation, or strategic priorities.
+Examples: Future growth strategies, expansion plans, and strategic objectives.
+MARKET — Product, Brand & Market
+Communication primarily concerning products, brands, consumers, customers, athletes, retailers, marketing, distribution, or commercial market activities.
+Examples: Product launches, brand positioning, and market initiatives.
+CHALL — Challenges, Crisis & Adaptation
+Communication primarily concerning challenges, crises, disruptions, uncertainty, organizational risks, or responses to adverse circumstances.
+Examples: Managing pandemic disruptions, responding to supply-chain challenges, or navigating uncertainty.
+PEOPLE — People & Organization
+Communication primarily concerning employees, management, teams, talent development, organizational structures, workplace conditions, or internal organizational culture.
+Examples: Employee development, workforce management, and organizational restructuring.
+STAKE — Stakeholders, Society & Sustainability
+Communication primarily concerning sustainability, environmental responsibility, society, communities, human rights, or external non-commercial stakeholders.
+Examples: Environmental commitments, carbon reduction, and community initiatives.
+OTHER — Other Leadership Communication
+Communication whose primary purpose does not correspond to any of the six substantive categories.
+Examples: General introductions, acknowledgements, or residual communication without a clearly identifiable substantive topic.
+Leadership Context Decision Rules
+Apply the following classification hierarchy:
+Semantic Meaning > Substantive Object > Temporal Orientation > Verb Patterns > Keywords
+Follow these rules:
+1. Read the complete paragraph before assigning a category.
+2. Identify what the corporate leader is primarily trying to communicate.
+3. Prioritize semantic meaning rather than individual keywords.
+4. Distinguish realized achievements from future strategic plans.
+5. Distinguish challenges and organizational responses from general business performance.
+6. Distinguish internal people-related matters from external stakeholder responsibilities.
+7. When multiple categories are plausible, identify the dominant communicative purpose.
+8. Assign exactly one category per observation.
+9. Use OTHER only when no substantive category is appropriate.
+Do not develop a new classification framework.
+TASK 2 — INFORMATION VALENCE CLASSIFICATION
+Independently classify the underlying information communicated in each paragraph.
+Use exactly three categories:
+Positive
+The paragraph communicates favorable realized outcomes, achievements, improvements, or developments.
+Examples:
+- Revenue increased.
+- Profitability improved.
+- The company successfully achieved its objectives.
+Neutral
+The paragraph communicates factual conditions, ongoing activities, plans, intentions, commitments, or future targets without a clearly favorable or unfavorable realized outcome.
+Examples:
+- The company plans to expand internationally.
+- Management has established new strategic priorities.
+- The company intends to improve operational efficiency.
+Mixed information is also classified as Neutral when neither favorable nor unfavorable outcomes predominate.
+Negative
+The paragraph communicates unfavorable realized outcomes, deterioration, setbacks, failures, or adverse developments.
+Examples:
+- Revenue decreased.
+- The company experienced financial losses.
+- Operational performance deteriorated.
+Information Valence Decision Rules
+1. Evaluate the underlying information rather than linguistic sentiment.
+2. Do not automatically classify optimistic language as Positive.
+3. Future intentions and strategic targets are not automatically Positive.
+4. References to challenges are not automatically Negative.
+5. Distinguish actual favorable or unfavorable developments from plans.
+6. When positive and negative developments coexist, identify the dominant informational outcome.
+7. When neither direction predominates, assign Neutral.
+8. Assign exactly one category per observation.
+Important: Leadership Context and Information Valence are separate constructs.
+
+I will upload Excel files containing text segments requiring classification.
+The files are be named:
+- AI_adidas.xlsx
+- AI_puma.xlsx
+- AI_asics.xlsx
+- AI_mizuno.xlsx
+For each uploaded file:
+1. Read every observation.
+2. Preserve the original ID.
+3. Read the complete Text.
+4. Independently classify Leadership Context and assign the value to a new column Leadership_context_AI
+5. Independently classify Information Valence nd assign the value to a new column Information_valence_AI
+6. Ensure every observation receives exactly one valid label for each variable.
+7. Preserve the original observation order.
+8. Do not modify or rewrite the original text.
+9. Do not add or remove observations.
+The classifications must be based solely on the textual information and the predefined.

@@ -1,0 +1,177 @@
+Tell me your version
+I'm ChatGPT, powered by OpenAI's GPT-6 model.
+
+**CODING FRAMEWORK**
+TASK 1 — LEADERSHIP CONTEXT CLASSIFICATION
+Classify each text segment into exactly one of the following seven mutually exclusive categories.
+PERF — Business Performance & Achievements
+Communication primarily concerning realized business performance, financial or operational results, achievements, records, or completed milestones.
+Examples: Revenue growth, profit declines, achieved business targets, and operational results.
+STRAT — Strategy, Growth & Future Direction
+Communication primarily concerning corporate strategy, future direction, long-term objectives, investment plans, expansion, transformation, or strategic priorities.
+Examples: Future growth strategies, expansion plans, and strategic objectives.
+MARKET — Product, Brand & Market
+Communication primarily concerning products, brands, consumers, customers, athletes, retailers, marketing, distribution, or commercial market activities.
+Examples: Product launches, brand positioning, and market initiatives.
+CHALL — Challenges, Crisis & Adaptation
+Communication primarily concerning challenges, crises, disruptions, uncertainty, organizational risks, or responses to adverse circumstances.
+Examples: Managing pandemic disruptions, responding to supply-chain challenges, or navigating uncertainty.
+PEOPLE — People & Organization
+Communication primarily concerning employees, management, teams, talent development, organizational structures, workplace conditions, or internal organizational culture.
+Examples: Employee development, workforce management, and organizational restructuring.
+STAKE — Stakeholders, Society & Sustainability
+Communication primarily concerning sustainability, environmental responsibility, society, communities, human rights, or external non-commercial stakeholders.
+Examples: Environmental commitments, carbon reduction, and community initiatives.
+OTHER — Other Leadership Communication
+Communication whose primary purpose does not correspond to any of the six substantive categories.
+Examples: General introductions, acknowledgements, or residual communication without a clearly identifiable substantive topic.
+Leadership Context Decision Rules
+Apply the following classification hierarchy:
+Semantic Meaning > Substantive Object > Temporal Orientation > Verb Patterns > Keywords
+Follow these rules:
+1. Read the complete paragraph before assigning a category.
+2. Identify what the corporate leader is primarily trying to communicate.
+3. Prioritize semantic meaning rather than individual keywords.
+4. Distinguish realized achievements from future strategic plans.
+5. Distinguish challenges and organizational responses from general business performance.
+6. Distinguish internal people-related matters from external stakeholder responsibilities.
+7. When multiple categories are plausible, identify the dominant communicative purpose.
+8. Assign exactly one category per observation.
+9. Use OTHER only when no substantive category is appropriate.
+Do not develop a new classification framework.
+TASK 2 — INFORMATION VALENCE CLASSIFICATION
+Independently classify the underlying information communicated in each paragraph.
+Use exactly three categories:
+Positive
+The paragraph communicates favorable realized outcomes, achievements, improvements, or developments.
+Examples:
+- Revenue increased.
+- Profitability improved.
+- The company successfully achieved its objectives.
+Neutral
+The paragraph communicates factual conditions, ongoing activities, plans, intentions, commitments, or future targets without a clearly favorable or unfavorable realized outcome.
+Examples:
+- The company plans to expand internationally.
+- Management has established new strategic priorities.
+- The company intends to improve operational efficiency.
+Mixed information is also classified as Neutral when neither favorable nor unfavorable outcomes predominate.
+Negative
+The paragraph communicates unfavorable realized outcomes, deterioration, setbacks, failures, or adverse developments.
+Examples:
+- Revenue decreased.
+- The company experienced financial losses.
+- Operational performance deteriorated.
+Information Valence Decision Rules
+1. Evaluate the underlying information rather than linguistic sentiment.
+2. Do not automatically classify optimistic language as Positive.
+3. Future intentions and strategic targets are not automatically Positive.
+4. References to challenges are not automatically Negative.
+5. Distinguish actual favorable or unfavorable developments from plans.
+6. When positive and negative developments coexist, identify the dominant informational outcome.
+7. When neither direction predominates, assign Neutral.
+8. Assign exactly one category per observation.
+Important: Leadership Context and Information Valence are separate constructs.
+
+I will upload Excel files containing text segments requiring classification.
+The files are be named:
+- AI_adidas.xlsx
+- AI_puma.xlsx
+- AI_asics.xlsx
+- AI_mizuno.xlsx
+For each uploaded file:
+1. Read every observation.
+2. Preserve the original ID.
+3. Read the complete Text.
+4. Independently classify Leadership Context and assign the value to a new column Leadership_context_AI
+5. Independently classify Information Valence nd assign the value to a new column Information_valence_AI
+6. Ensure every observation receives exactly one valid label for each variable.
+7. Preserve the original observation order.
+8. Do not modify or rewrite the original text.
+9. Do not add or remove observations.
+The classifications must be based solely on the textual information and the predefined.
+…
+Understood. I will apply your coding framework exactly as specified to all four Excel files:
+
+AI_adidas.xlsx
+AI_puma.xlsx
+AI_asics.xlsx
+AI_mizuno.xlsx
+For every observation, I will independently assign:
+
+Leadership_context_AI: PERF, STRAT, MARKET, CHALL, PEOPLE, STAKE, or OTHER.
+Information_valence_AI: Positive, Neutral, or Negative.
+I will follow your classification hierarchy and decision rules, prioritizing the paragraph's overall semantic meaning and dominant communicative purpose.
+
+Quality requirements:
+
+Read and evaluate every complete text segment.
+Base classifications exclusively on the supplied text and predefined framework.
+Apply the categories consistently across all four companies.
+Assign exactly one valid label per variable per observation.
+Preserve all original IDs, text, columns, and observation order.
+Add only the two requested classification columns.
+Ensure no observations or classification values are missing.
+I will return four separate classified Excel files, retaining their original structure.
+
+Please upload the four Excel files.
+
+
+AI_adidas.xlsx
+Feuille de calcul
+
+AI_asics.xlsx
+Feuille de calcul
+
+AI_mizuno.xlsx
+Feuille de calcul
+
+AI_puma.xlsx
+Feuille de calcul
+
+Réfléchi pendant 4m 6s
+Completed the classification of all 118 observations across the four Excel files using your predefined coding framework.
+
+Download the classified Excel files
+Company	Observations	Classified Excel file
+adidas	44	
+Download AI_adidas_classified.xlsx
+ASICS	41	
+Download AI_asics_classified.xlsx
+Mizuno	12	
+Download AI_mizuno_classified.xlsx
+PUMA	21	
+Download AI_puma_classified.xlsx
+Total	118	
+Classification performed
+Each observation received two independently assigned labels:
+
+1. Leadership_context_AI
+PERF, STRAT, MARKET, CHALL, PEOPLE, STAKE, or OTHER.
+
+2. Information_valence_AI
+Positive, Neutral, or Negative.
+
+Quality verification
+All four completed workbooks were checked to confirm that:
+
+Every observation has exactly one valid label for each variable.
+All original IDs and text segments remain unchanged.
+Original columns and observation order are preserved.
+No observations were added or removed.
+Both new classification columns are populated.
+The classifications follow your predefined framework rather than a newly developed coding scheme.
+All 118 observations passed the completeness and data-preservation checks.
+
+The four Excel files are ready for your subsequent analysis.
+
+
+AI_adidas_classified.xlsx
+Excel
+
+AI_asics_classified.xlsx
+Excel
+
+AI_mizuno_classified.xlsx
+Excel
+1 de plus
+
