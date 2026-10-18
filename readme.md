@@ -26,14 +26,14 @@ CEOCommunication/
 ├── data/                                       # Source reports and coded dataset
 ├── docs/                                       # Thesis framework and literature
 ├── notebooks/                                  # Sequential analysis notebooks
-│   ├── 01_data_preparation.ipynb     
-│   ├── 02_sentiment_analysis.ipynb               
-│   ├── 03_sentiment_exploration.ipynb   
-│   ├── 04_regression_analysis.ipynb  
-│   ├── 05_regression_exploration.ipynb   
-│   ├── 06_extension.ipynb                   
-├── results/                              
-│   ├── extensions/                       
+│   ├── 01_data_exploration.ipynb   
+│   ├── 02_sentiment.ipynb 
+│   ├── 03_regression.ipynb  
+│   ├── 04_extension_intercoder_reliability.ipynb              
+│   ├── 05_extension_sentiment_analysis.ipynb  
+│   ├── 06_extension_regression_analysis.ipynb               
+├── results/                          
+│   ├── extensions/                   
 │   ├── figures/
 │   ├── tables/
 project
@@ -49,7 +49,7 @@ project
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ID`                  | Unique identifier that identifies the segment's order and source ex. DEU25A100                                                                           |
 | `Text`                | Full original data segment                                                                                                                               |
-| `Text_type`           | body_text, body_text_list, title, quote, heading, question, answer                                                                                       |
+| `Text_type`           | body_text,  title, quote,  question, answer                                                                                                          |
 | `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER`                                                     |
 | `Coding_ambiguity`    | True or False                                                                                                                                            |
 | `Alternative_context` | If Coding_ambiguity is True, assign one dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER` otherwise empty |
@@ -64,6 +64,8 @@ project
 | `Communicator_role`   | `ceo` or `president`                                                                                                                                 |
 | `Communicator_name`   | Name of the `Communicator_role`                                                                                                                        |
 | `Comment`             | A brief explanation of leadership context labeling and/or the information valence                                                                        |
+| `Coding_ambiguity`    | `True` if there is another Leadership context option otherwise `False`                                                                               |
+| `Alternative_context` | The alternative leadership context if `Coding_ambiguity` is `True` otherwise empty                                                                   |
 
 **Leadership contexts**
 

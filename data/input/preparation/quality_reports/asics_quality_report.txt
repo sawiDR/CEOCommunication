@@ -1,0 +1,131 @@
+============================================================
+DATA QUALITY REPORT: ASICS
+============================================================
+
+1. DATASET OVERVIEW
+Dataset size: (206, 16)
+Number of rows: 206
+Number of columns: 16
+
+Columns:
+- ID
+- Text
+- Text_type
+- Leadership_context_human
+- Information_valence_human
+- Communication_type
+- Source_type
+- Company
+- Country
+- Year
+- Covid
+- Communicator_role
+- Communicator_name
+- Comment
+- Coding_ambiguity
+- Alternative_context
+
+2. REQUIRED COLUMNS CHECK
+All required columns are present.
+
+3. MISSING VALUES
+ID: 0 missing values (0.00%)
+Text: 0 missing values (0.00%)
+Text_type: 0 missing values (0.00%)
+Leadership_context_human: 0 missing values (0.00%)
+Information_valence_human: 0 missing values (0.00%)
+Communication_type: 0 missing values (0.00%)
+Source_type: 0 missing values (0.00%)
+Company: 0 missing values (0.00%)
+Country: 0 missing values (0.00%)
+Year: 0 missing values (0.00%)
+Covid: 0 missing values (0.00%)
+Communicator_role: 0 missing values (0.00%)
+Communicator_name: 0 missing values (0.00%)
+
+4. UNIQUE VALUES
+ID: 206 unique values
+Text: 205 unique values
+Text_type: 2 unique values
+Leadership_context_human: 7 unique values
+Information_valence_human: 3 unique values
+Communication_type: 1 unique values
+Source_type: 1 unique values
+Company: 1 unique values
+Country: 1 unique values
+Year: 6 unique values
+Covid: 2 unique values
+Communicator_role: 2 unique values
+Communicator_name: 3 unique values
+
+5. CATEGORY DISTRIBUTIONS
+
+Text_type:
+Text_type
+body_text    132
+title         74
+
+Leadership_context_human:
+Leadership_context_human
+STRAT     59
+STAKE     37
+PERF      30
+OTHER     28
+PEOPLE    22
+MARKET    20
+CHALL     10
+
+Information_valence_human:
+Information_valence_human
+neutral     142
+positive     55
+negative      9
+
+Communication_type:
+Communication_type
+message    206
+
+Source_type:
+Source_type
+integrated_report    206
+
+Company:
+Company
+asics    206
+
+Country:
+Country
+JPN    206
+
+Year:
+Year
+2020    56
+2023    39
+2022    37
+2021    32
+2024    21
+2025    21
+
+Covid:
+Covid
+True     164
+False     42
+
+Communicator_role:
+Communicator_role
+ceo          166
+president     40
+
+Communicator_name:
+Communicator_name
+Yasuhito Hirota       108
+Motoi Oyama            58
+Mitsuyuki Tominaga     40
+
+6. DUPLICATE CHECKS
+Duplicate IDs: 0
+Duplicate texts: 1
+
+============================================================
+END OF REPORT
+============================================================

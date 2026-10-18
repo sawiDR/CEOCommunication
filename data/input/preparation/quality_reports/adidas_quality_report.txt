@@ -1,0 +1,136 @@
+============================================================
+DATA QUALITY REPORT: ADIDAS
+============================================================
+
+1. DATASET OVERVIEW
+Dataset size: (219, 16)
+Number of rows: 219
+Number of columns: 16
+
+Columns:
+- ID
+- Text
+- Text_type
+- Leadership_context_human
+- Information_valence_human
+- Communication_type
+- Source_type
+- Company
+- Country
+- Year
+- Covid
+- Communicator_role
+- Communicator_name
+- Comment
+- Coding_ambiguity
+- Alternative_context
+
+2. REQUIRED COLUMNS CHECK
+All required columns are present.
+
+3. MISSING VALUES
+ID: 0 missing values (0.00%)
+Text: 0 missing values (0.00%)
+Text_type: 0 missing values (0.00%)
+Leadership_context_human: 0 missing values (0.00%)
+Information_valence_human: 0 missing values (0.00%)
+Communication_type: 0 missing values (0.00%)
+Source_type: 0 missing values (0.00%)
+Company: 0 missing values (0.00%)
+Country: 0 missing values (0.00%)
+Year: 0 missing values (0.00%)
+Covid: 0 missing values (0.00%)
+Communicator_role: 0 missing values (0.00%)
+Communicator_name: 0 missing values (0.00%)
+
+4. UNIQUE VALUES
+ID: 219 unique values
+Text: 218 unique values
+Text_type: 5 unique values
+Leadership_context_human: 7 unique values
+Information_valence_human: 3 unique values
+Communication_type: 3 unique values
+Source_type: 2 unique values
+Company: 1 unique values
+Country: 1 unique values
+Year: 6 unique values
+Covid: 2 unique values
+Communicator_role: 2 unique values
+Communicator_name: 2 unique values
+
+5. CATEGORY DISTRIBUTIONS
+
+Text_type:
+Text_type
+answer       87
+question     65
+body_text    33
+title        22
+quote        12
+
+Leadership_context_human:
+Leadership_context_human
+OTHER     59
+PERF      49
+STRAT     40
+PEOPLE    24
+MARKET    22
+CHALL     17
+STAKE      8
+
+Information_valence_human:
+Information_valence_human
+positive    130
+neutral      85
+negative      4
+
+Communication_type:
+Communication_type
+interview     84
+interview     78
+letter        57
+
+Source_type:
+Source_type
+annual_report     138
+annual_report      81
+
+Company:
+Company
+adidas    219
+
+Country:
+Country
+DEU    219
+
+Year:
+Year
+2022    44
+2024    41
+2023    40
+2025    37
+2020    30
+2021    27
+
+Covid:
+Covid
+True     141
+False     78
+
+Communicator_role:
+Communicator_role
+ceo     114
+ceo     105
+
+Communicator_name:
+Communicator_name
+Bjørn Gulden      162
+Kasper Rorsted     57
+
+6. DUPLICATE CHECKS
+Duplicate IDs: 0
+Duplicate texts: 1
+
+============================================================
+END OF REPORT
+============================================================
