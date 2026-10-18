@@ -168,14 +168,14 @@ Open a notebook and select the **CEOContext** kernel. Notebook relative paths de
 
 ## Execution workflow
 
-| Notebook                            | Purpose                                                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `01_data_exploration.ipynb`       | Check source coverage, IDs, coding categories, missing data and initial descriptive statistics          |
-| `02_sentiment_analysis.ipynb`     | Run the sentiment analysis                                                                              |
-| `03_sentiment_exploration.ipynb`  | Produce descriptive comparisons, figures and passages for qualitative review for the sentiment analysis |
-| `04_regression_analysis.ipynb`    | Run the regression analysis                                                                             |
-| `05_regression_exploration.ipynb` | Interpret coefficients, check diagnostics and compare model specifications                              |
-| `06_extension.ipynb`              | Other explicitly documented extensions                                                                  |
+| Notebook                                      | Purpose                                                                                                                            |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `01_data_exploration.ipynb`                 |                                                                                                                                    |
+| `02_sentiment.ipynb`                        | Run the sentiment analysis                                                                                                         |
+| `03_regression.ipynb`                       | Produce descriptive comparisons, figures and passages for qualitative review for the sentiment analysisRun the regression analysis |
+| `04_extension_intercoder_reliability.ipynb` | Run the regression analysis                                                                                                        |
+| `05_extension_sentimen_analysis.ipynb`      | Produce descriptive comparisons, figures and passages for qualitative review for the sentiment analysis                            |
+| `06_extension_regression_analysis.ipynb`    | Interpret coefficients, check diagnostics and compare model specifications                                                         |
 
 Run notebooks in order. After changes to source data or functions, restart the kernel and run the relevant notebooks from the beginning to avoid stale variables.
 
