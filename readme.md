@@ -26,14 +26,14 @@ CEOCommunication/
 ├── data/                                       # Source reports and coded dataset
 ├── docs/                                       # Thesis framework and literature
 ├── notebooks/                                  # Sequential analysis notebooks
-│   ├── 01_data_exploration.ipynb       
-│   ├── 02_sentiment_analysis.ipynb                 
+│   ├── 01_data_preparation.ipynb     
+│   ├── 02_sentiment_analysis.ipynb               
 │   ├── 03_sentiment_exploration.ipynb   
-│   ├── 04_regression_analysis.ipynb    
+│   ├── 04_regression_analysis.ipynb  
 │   ├── 05_regression_exploration.ipynb   
-│   ├── 06_extension.ipynb                     
-├── results/                                
-│   ├── extensions/                         
+│   ├── 06_extension.ipynb                   
+├── results/                              
+│   ├── extensions/                       
 │   ├── figures/
 │   ├── tables/
 project
@@ -45,26 +45,25 @@ project
 
 ## Dataset structure
 
-| Column                  | Meaning and convention                                                                                     |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `ID`                  | Unique identifier that identifies the segment's order and source ex. DEU25A100                             |
-| `Text`                | Full original data segment                                                                                 |
-| `Text_type`           | body_text, body_text_list, title, quote, heading, question, answer                                         |
-| `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER`                 |
-| `Coding_ambiguity`    | True or False                                                                    |
-| `Alternative_context` | If Coding_ambiguity is True, assign one dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER` otherwise empty           |
-| `Information_valence` | `positive`, `neutral` or `negative`                                                                  |
-| `Communication_type`             | letter, message, interview                                                                                |
-| `Source_type`         | annual_report, sustainability_report, integrated_report                                                                                    |
-| `Company`             | `adidas`, `puma`, `asics` or `mizuno`                                                                                   |
-| `Country`             | `DEU` or `JPN`                                                                                         |
-| `Year`                | Numeric reporting year in YYYY format                                                                      |
-| `Covid`               | Specific period indicator for COVID-19 : 2024 and 2025 →`False` ; 2020, 2021, 2022 and 2023 → `True` |
-| `CEO`                 | CEO associated with the announcement                                                                       |
-| `Communicator_role`  | `ceo` or `president`                                                       |
-| `Communicator_name`  | Name of the `Communicator_role`                  |
-| `Comment`             | A brief explanation of leadership context labeling and/or the information valence                        |                                                                            |
-
+| Column                  | Meaning and convention                                                                                                                                   |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ID`                  | Unique identifier that identifies the segment's order and source ex. DEU25A100                                                                           |
+| `Text`                | Full original data segment                                                                                                                               |
+| `Text_type`           | body_text, body_text_list, title, quote, heading, question, answer                                                                                       |
+| `Leadership_context`  | One dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER`                                                     |
+| `Coding_ambiguity`    | True or False                                                                                                                                            |
+| `Alternative_context` | If Coding_ambiguity is True, assign one dominant category:`PERF`, `STRAT`, `MARKET`, `CHALL`, `PEOPLE`, `STAKE` or `OTHER` otherwise empty |
+| `Information_valence` | `positive`, `neutral` or `negative`                                                                                                                |
+| `Communication_type`  | letter, message, interview                                                                                                                               |
+| `Source_type`         | annual_report, sustainability_report, integrated_report                                                                                                  |
+| `Company`             | `adidas`, `puma`, `asics` or `mizuno`                                                                                                            |
+| `Country`             | `DEU` or `JPN`                                                                                                                                       |
+| `Year`                | Numeric reporting year in YYYY format                                                                                                                    |
+| `Covid`               | Specific period indicator for COVID-19 : 2024 and 2025 →`False` ; 2020, 2021, 2022 and 2023 → `True`                                               |
+| `CEO`                 | CEO associated with the announcement                                                                                                                     |
+| `Communicator_role`   | `ceo` or `president`                                                                                                                                 |
+| `Communicator_name`   | Name of the `Communicator_role`                                                                                                                        |
+| `Comment`             | A brief explanation of leadership context labeling and/or the information valence                                                                        |
 
 **Leadership contexts**
 
@@ -78,14 +77,13 @@ project
 | `STAKE`  | Stakeholders, Society & Sustainability | Societal and environmental impact, stakeholder relationships, human rights and broader responsibility                |
 | `OTHER`  | Other Leadership Communication         | Communication whose primary purpose does not correspond to any substantive category.                                 |
 
-
  **Information valence**
 
- | Label             | Interpretation                                                                                                                  | Illustrative case                                                        |
- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
- | `Positive`      | Favorable realized development, improvement, achievement or outcome                                                             | Revenue increased; emissions fell; an operational problem was resolved   |
- | `Neutral` | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
- | `Negative`      | Unfavorable development, deterioration, failure or adverse outcome                                                              | Sales declined; a target was missed; jobs were cut                       |
+| Label        | Interpretation                                                                                                                  | Illustrative case                                                        |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `Positive` | Favorable realized development, improvement, achievement or outcome                                                             | Revenue increased; emissions fell; an operational problem was resolved   |
+| `Neutral`  | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
+| `Negative` | Unfavorable development, deterioration, failure or adverse outcome                                                              | Sales declined; a target was missed; jobs were cut                       |
 
 ---
 
@@ -180,7 +178,6 @@ Open a notebook and select the **CEOContext** kernel. Notebook relative paths de
 Run notebooks in order. After changes to source data or functions, restart the kernel and run the relevant notebooks from the beginning to avoid stale variables.
 
 ---
-
 
 **Implementation references used during workflow development:**
 
