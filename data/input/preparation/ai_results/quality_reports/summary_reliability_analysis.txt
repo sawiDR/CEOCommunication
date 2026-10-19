@@ -1,0 +1,99 @@
+
+COMPANY: ADIDAS
+
+Leadership_context
+Valid observations: 44
+Exact agreement: 50.00%
+Cohen's kappa: 0.4094
+Interpretation: Moderate agreement
+Disagreements: 22
+Most frequent disagreement: Human=OTHER, AI=MARKET (4 observations).
+
+
+Information_valence
+Valid observations: 44
+Exact agreement: 65.91%
+Cohen's kappa: 0.3726
+Interpretation: Fair agreement
+Disagreements: 15
+Most frequent disagreement: Human=positive, AI=neutral (11 observations).
+
+
+COMPANY: PUMA
+
+Leadership_context
+Valid observations: 21
+Exact agreement: 47.62%
+Cohen's kappa: 0.3840
+Interpretation: Fair agreement
+Disagreements: 11
+Most frequent disagreement: Human=STAKE, AI=OTHER (5 observations).
+
+
+Information_valence
+Valid observations: 21
+Exact agreement: 57.14%
+Cohen's kappa: 0.3505
+Interpretation: Fair agreement
+Disagreements: 9
+Most frequent disagreement: Human=positive, AI=neutral (8 observations).
+
+
+COMPANY: ASICS
+
+Leadership_context
+Valid observations: 41
+Exact agreement: 51.22%
+Cohen's kappa: 0.4217
+Interpretation: Moderate agreement
+Disagreements: 20
+Most frequent disagreement: Human=PERF, AI=STRAT (3 observations).
+
+
+Information_valence
+Valid observations: 41
+Exact agreement: 75.61%
+Cohen's kappa: 0.4591
+Interpretation: Moderate agreement
+Disagreements: 10
+Most frequent disagreement: Human=positive, AI=neutral (5 observations).
+
+
+COMPANY: MIZUNO
+
+Leadership_context
+Valid observations: 12
+Exact agreement: 50.00%
+Cohen's kappa: 0.3684
+Interpretation: Fair agreement
+Disagreements: 6
+Most frequent disagreement: Human=MARKET, AI=OTHER (1 observations).
+
+
+Information_valence
+Valid observations: 12
+Exact agreement: 75.00%
+Cohen's kappa: 0.2500
+Interpretation: Fair agreement
+Disagreements: 3
+Most frequent disagreement: Human=positive, AI=neutral (2 observations).
+
+
+COMPANY: ALL_COMPANIES
+
+Leadership_context
+Valid observations: 118
+Exact agreement: 50.00%
+Cohen's kappa: 0.4129
+Interpretation: Moderate agreement
+Disagreements: 59
+Most frequent disagreement: Human=PERF, AI=MARKET (6 observations).
+
+
+Information_valence
+Valid observations: 118
+Exact agreement: 68.64%
+Cohen's kappa: 0.4045
+Interpretation: Moderate agreement
+Disagreements: 37
+Most frequent disagreement: Human=positive, AI=neutral (26 observations).
