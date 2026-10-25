@@ -59,12 +59,12 @@ project
 | `Company`             | `adidas`, `puma`, `asics` or `mizuno`                                                                                                            |
 | `Country`             | `DEU` or `JPN`                                                                                                                                       |
 | `Year`                | Numeric reporting year in YYYY format                                                                                                                    |
-| `Covid`               | Specific period indicator for COVID-19 : 2024 and 2025 →`False` ; 2020, 2021, 2022 and 2023 → `True`                                               |
+| `Covid`               | Specific period indicator for COVID-19 : 2024 and 2025 →`false` ; 2020, 2021, 2022 and 2023 → `true`                                               |
 | `CEO`                 | CEO associated with the announcement                                                                                                                     |
 | `Communicator_role`   | `ceo` or `president`                                                                                                                                 |
 | `Communicator_name`   | Name of the `Communicator_role`                                                                                                                        |
 | `Comment`             | A brief explanation of leadership context labeling and/or the information valence                                                                        |
-| `Coding_ambiguity`    | `True` if there is another Leadership context option otherwise `False`                                                                               |
+| `Coding_ambiguity`    | `true` if there is another Leadership context option otherwise `false`                                                                               |
 | `Alternative_context` | The alternative leadership context if `Coding_ambiguity` is `True` otherwise empty                                                                   |
 
 **Leadership contexts**
