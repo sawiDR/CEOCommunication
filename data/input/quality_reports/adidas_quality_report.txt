@@ -11,8 +11,8 @@ Columns:
 - ID
 - Text
 - Text_type
-- Leadership_context_human
-- Information_valence_human
+- Leadership_context
+- Information_valence
 - Communication_type
 - Source_type
 - Company
@@ -32,8 +32,8 @@ All required columns are present.
 ID: 0 missing values (0.00%)
 Text: 0 missing values (0.00%)
 Text_type: 0 missing values (0.00%)
-Leadership_context_human: 0 missing values (0.00%)
-Information_valence_human: 0 missing values (0.00%)
+Leadership_context: 0 missing values (0.00%)
+Information_valence: 0 missing values (0.00%)
 Communication_type: 0 missing values (0.00%)
 Source_type: 0 missing values (0.00%)
 Company: 0 missing values (0.00%)
@@ -50,8 +50,8 @@ Alternative_context: 213 missing values (97.26%)
 ID: 219 unique values
 Text: 218 unique values
 Text_type: 5 unique values
-Leadership_context_human: 7 unique values
-Information_valence_human: 3 unique values
+Leadership_context: 7 unique values
+Information_valence: 3 unique values
 Communication_type: 3 unique values
 Source_type: 2 unique values
 Company: 1 unique values
@@ -74,8 +74,8 @@ body_text    33
 title        22
 quote        12
 
-Leadership_context_human:
-Leadership_context_human
+Leadership_context:
+Leadership_context
 OTHER     53
 PERF      46
 STRAT     43
@@ -84,8 +84,8 @@ PEOPLE    23
 CHALL     17
 STAKE     11
 
-Information_valence_human:
-Information_valence_human
+Information_valence:
+Information_valence
 positive    124
 neutral      90
 negative      5
