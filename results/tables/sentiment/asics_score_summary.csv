@@ -1,0 +1,3 @@
+model,n,mean,median,std,q25,q75
+Financial-RoBERTa,206,0.612,0.996,0.53,0.006,0.997
+FinBERT,206,0.373,0.27,0.358,0.072,0.714
