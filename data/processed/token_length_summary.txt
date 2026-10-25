@@ -1,0 +1,63 @@
+TOKEN LENGTH ANALYSIS SUMMARY
+==================================================
+
+Company: adidas
+Number of paragraphs: 219
+Model: financial_roberta
+Maximum text chunk size: 512 tokens
+Longest paragraph: 315 tokens
+Average paragraph length: 81.88 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+Model: finbert
+Maximum text chunk size: 510 tokens
+Longest paragraph: 318 tokens
+Average paragraph length: 80.28 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+
+Company: puma
+Number of paragraphs: 105
+Model: financial_roberta
+Maximum text chunk size: 512 tokens
+Longest paragraph: 344 tokens
+Average paragraph length: 90.50 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+Model: finbert
+Maximum text chunk size: 510 tokens
+Longest paragraph: 329 tokens
+Average paragraph length: 90.58 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+
+Company: asics
+Number of paragraphs: 206
+Model: financial_roberta
+Maximum text chunk size: 512 tokens
+Longest paragraph: 374 tokens
+Average paragraph length: 76.41 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+Model: finbert
+Maximum text chunk size: 510 tokens
+Longest paragraph: 369 tokens
+Average paragraph length: 76.11 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+
+Company: mizuno
+Number of paragraphs: 62
+Model: financial_roberta
+Maximum text chunk size: 512 tokens
+Longest paragraph: 350 tokens
+Average paragraph length: 86.06 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+Model: finbert
+Maximum text chunk size: 510 tokens
+Longest paragraph: 341 tokens
+Average paragraph length: 86.35 tokens
+Paragraphs exceeding the limit: 0
+----------------------------------------
+

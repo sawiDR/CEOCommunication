@@ -1,0 +1,150 @@
+============================================================
+DATA QUALITY REPORT: MIZUNO
+============================================================
+
+1. DATASET OVERVIEW
+Dataset size: (62, 16)
+Number of rows: 62
+Number of columns: 16
+
+Columns:
+- ID
+- Text
+- Text_type
+- Leadership_context_human
+- Information_valence_human
+- Communication_type
+- Source_type
+- Company
+- Country
+- Year
+- Covid
+- Communicator_role
+- Communicator_name
+- Comment
+- Coding_ambiguity
+- Alternative_context
+
+2. REQUIRED COLUMNS CHECK
+All required columns are present.
+
+3. MISSING VALUES
+ID: 0 missing values (0.00%)
+Text: 0 missing values (0.00%)
+Text_type: 0 missing values (0.00%)
+Leadership_context_human: 0 missing values (0.00%)
+Information_valence_human: 0 missing values (0.00%)
+Communication_type: 0 missing values (0.00%)
+Source_type: 0 missing values (0.00%)
+Company: 0 missing values (0.00%)
+Country: 0 missing values (0.00%)
+Year: 0 missing values (0.00%)
+Covid: 0 missing values (0.00%)
+Communicator_role: 0 missing values (0.00%)
+Communicator_name: 0 missing values (0.00%)
+Comment: 59 missing values (95.16%)
+Coding_ambiguity: 0 missing values (0.00%)
+Alternative_context: 60 missing values (96.77%)
+
+4. UNIQUE VALUES
+ID: 62 unique values
+Text: 58 unique values
+Text_type: 2 unique values
+Leadership_context_human: 7 unique values
+Information_valence_human: 2 unique values
+Communication_type: 1 unique values
+Source_type: 1 unique values
+Company: 1 unique values
+Country: 1 unique values
+Year: 5 unique values
+Covid: 2 unique values
+Communicator_role: 1 unique values
+Communicator_name: 1 unique values
+Comment: 3 unique values
+Coding_ambiguity: 2 unique values
+Alternative_context: 2 unique values
+
+5. CATEGORY DISTRIBUTIONS
+
+Text_type:
+Text_type
+body_text    48
+title        14
+
+Leadership_context_human:
+Leadership_context_human
+STAKE     19
+CHALL     12
+STRAT     12
+OTHER      8
+PEOPLE     5
+MARKET     4
+PERF       2
+
+Information_valence_human:
+Information_valence_human
+neutral     48
+positive    14
+
+Communication_type:
+Communication_type
+message    62
+
+Source_type:
+Source_type
+sustainability_report    62
+
+Company:
+Company
+mizuno    62
+
+Country:
+Country
+JPN    62
+
+Year:
+Year
+2025    20
+2024    13
+2021    10
+2022    10
+2023     9
+
+Covid:
+Covid
+False    33
+True     29
+
+Communicator_role:
+Communicator_role
+president    62
+
+Communicator_name:
+Communicator_name
+Akito Mizuno    62
+
+Comment:
+Comment
+NaN                                                                                                                                                                                                                                                                                                                                                            59
+Acknowledges customers’ contribution to Mizuno’s development and expresses a positive future customer relationship. MARKET is primary because customers are the substantive focus.                                                                                                                                                                              1
+STAKE primary because it focuses on environmental conservation, CSR, resource use, and responsible supplier procurement. STRAT is an alternative because sustainability investment is linked to management strategy. The information valence iis neutral because the passage combines past achievements, ongoing commitments, and expected future benefits.     1
+STRAT primary because the established Purpose, Vision, and Values are presented as guides for future global growth. PERF is an alternative because their establishment was a completed milestone.                                                                                                                                                               1
+
+Coding_ambiguity:
+Coding_ambiguity
+False    60
+True      2
+
+Alternative_context:
+Alternative_context
+NaN      60
+STRAT     1
+PERF      1
+
+6. DUPLICATE CHECKS
+Duplicate IDs: 0
+Duplicate texts: 4
+
+============================================================
+END OF REPORT
+============================================================

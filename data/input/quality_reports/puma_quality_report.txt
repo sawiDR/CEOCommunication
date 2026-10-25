@@ -1,0 +1,161 @@
+============================================================
+DATA QUALITY REPORT: PUMA
+============================================================
+
+1. DATASET OVERVIEW
+Dataset size: (105, 16)
+Number of rows: 105
+Number of columns: 16
+
+Columns:
+- ID
+- Text
+- Text_type
+- Leadership_context_human
+- Information_valence_human
+- Communication_type
+- Source_type
+- Company
+- Country
+- Year
+- Covid
+- Communicator_role
+- Communicator_name
+- Comment
+- Coding_ambiguity
+- Alternative_context
+
+2. REQUIRED COLUMNS CHECK
+All required columns are present.
+
+3. MISSING VALUES
+ID: 0 missing values (0.00%)
+Text: 0 missing values (0.00%)
+Text_type: 0 missing values (0.00%)
+Leadership_context_human: 0 missing values (0.00%)
+Information_valence_human: 0 missing values (0.00%)
+Communication_type: 0 missing values (0.00%)
+Source_type: 0 missing values (0.00%)
+Company: 0 missing values (0.00%)
+Country: 0 missing values (0.00%)
+Year: 0 missing values (0.00%)
+Covid: 0 missing values (0.00%)
+Communicator_role: 0 missing values (0.00%)
+Communicator_name: 0 missing values (0.00%)
+Comment: 87 missing values (82.86%)
+Coding_ambiguity: 0 missing values (0.00%)
+Alternative_context: 97 missing values (92.38%)
+
+4. UNIQUE VALUES
+ID: 105 unique values
+Text: 99 unique values
+Text_type: 2 unique values
+Leadership_context_human: 7 unique values
+Information_valence_human: 3 unique values
+Communication_type: 1 unique values
+Source_type: 1 unique values
+Company: 1 unique values
+Country: 1 unique values
+Year: 6 unique values
+Covid: 2 unique values
+Communicator_role: 1 unique values
+Communicator_name: 3 unique values
+Comment: 9 unique values
+Coding_ambiguity: 2 unique values
+Alternative_context: 3 unique values
+
+5. CATEGORY DISTRIBUTIONS
+
+Text_type:
+Text_type
+body_text    99
+title         6
+
+Leadership_context_human:
+Leadership_context_human
+MARKET    21
+PERF      19
+STRAT     15
+PEOPLE    15
+OTHER     15
+CHALL     11
+STAKE      9
+
+Information_valence_human:
+Information_valence_human
+positive    59
+neutral     36
+negative    10
+
+Communication_type:
+Communication_type
+letter    105
+
+Source_type:
+Source_type
+annual_report    105
+
+Company:
+Company
+puma    105
+
+Country:
+Country
+DEU    105
+
+Year:
+Year
+2023    23
+2022    20
+2020    19
+2025    17
+2021    16
+2024    10
+
+Covid:
+Covid
+True     78
+False    27
+
+Communicator_role:
+Communicator_role
+ceo    105
+
+Communicator_name:
+Communicator_name
+Arne Freundt    54
+Bjørn Gulden    35
+Arthur Hoeld    16
+
+Comment:
+Comment
+NaN                                                                                                                                                                                                                                 87
+Salutation addressed to shareholders, although it contains no substantive information.                                                                                                                                               6
+CEO signature. No substantive business context.                                                                                                                                                                                      4
+Closing goodwill and health message addressed to the PUMA audience, followed by the CEO signature. No substantive business context.                                                                                                  2
+CHALL primary becuase it describes the disruption caused by store closures and the operational adaptation toward e-commerce, marketing, and logistics. MARKET is an alternative because channels and distribution are discussed;     1
+Expresses appreciation for the supervisory board’s trust and support as an external governance stakeholder. The investments are context, not the primary communicative purpose.                                                      1
+PERF is primary because the passage opens with realized 2020 business performance. MARKET is an alternative because consumer and sports-market trends are also discussed. CHALL is only background context.                          1
+CHALL primary because the passage focuses on COVID-related factory closures, supply-chain disruption, and production suspension. MARKET as an alternative because product supply is affected.                                        1
+STAKE primary because it  focuses on equality, anti-discrimination, environmental sustainability, circularity, climate action, and social responsibility.                                                                            1
+PERF primary because it reports realized product and commercial achievements. MARKET is an alternative because products and consumers are discussed, but achieved results dominate.                                                  1
+
+Coding_ambiguity:
+Coding_ambiguity
+False    97
+True      8
+
+Alternative_context:
+Alternative_context
+NaN       97
+MARKET     6
+PEOPLE     1
+STRAT      1
+
+6. DUPLICATE CHECKS
+Duplicate IDs: 0
+Duplicate texts: 6
+
+============================================================
+END OF REPORT
+============================================================
