@@ -30,10 +30,8 @@ CEOCommunication/
 │   ├── 02_sentiment.ipynb 
 │   ├── 03_regression.ipynb  
 │   ├── 04_extension_intercoder_reliability.ipynb              
-│   ├── 05_extension_sentiment_analysis.ipynb  
-│   ├── 06_extension_regression_analysis.ipynb               
-├── results/                          
-│   ├── extensions/                   
+│   ├── 05_extension_sentiment_analysis.ipynb           
+├── results/                                           
 │   ├── figures/
 │   ├── tables/
 project
