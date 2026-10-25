@@ -1,0 +1,2 @@
+n_score_pairs,pearson_r,spearman_rho,n_label_pairs,exact_label_agreement_pct
+105,0.637,0.545,105,76.19
