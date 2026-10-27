@@ -4,7 +4,7 @@
 
 **Author** : Saowalak De Rossi
 
-**Research area:** CEO communication, leadership contexts, national environments and natural language processing
+**Research area:** Leaders communication, leadership contexts, national environments and natural language processing
 
 ## Project overview
 
