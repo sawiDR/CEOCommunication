@@ -1,5 +1,4 @@
-# Context or Culture? Explaining Sentiment in Annual Leadership Communication from German and Japanese Sporting-Goods Companies through Leadership Context and National Environment
-
+# Leadership Context and Linguistic Sentiment in Annual Corporate Leadership Communication: Evidence from German and Japanese Sporting-Goods Companies
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](#requirements)
 
 **Author** : Saowalak De Rossi
