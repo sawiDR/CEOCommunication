@@ -29,9 +29,9 @@ CEOCommunication/
 │   ├── 01_data_exploration.ipynb   
 │   ├── 02_sentiment.ipynb 
 │   ├── 03_regression.ipynb  
-│   ├── 04_extension_intercoder_reliability.ipynb            
-│   ├── 05_extension_sentiment_analysis.ipynb         
-├── results/                                         
+│   ├── 04_extension_intercoder_reliability.ipynb          
+│   ├── 05_extension_sentiment_analysis.ipynb       
+├── results/                                       
 │   ├── figures/
 │   ├── tables/
 project
@@ -58,13 +58,11 @@ project
 | `Country`             | `DEU` or `JPN`                                                                                                                                       |
 | `Year`                | Numeric reporting year in YYYY format                                                                                                                    |
 | `Covid`               | Specific period indicator for COVID-19 : 2024 and 2025 →`false` ; 2020, 2021, 2022 and 2023 → `true`                                               |
-| `CEO`                 | CEO associated with the announcement                                                                                                                     |
 | `Communicator_role`   | `ceo` or `president`                                                                                                                                 |
 | `Communicator_name`   | Name of the `Communicator_role`                                                                                                                        |
 | `Comment`             | A brief explanation of leadership context labeling and/or the information valence                                                                        |
 | `Coding_ambiguity`    | `true` if there is another Leadership context option otherwise `false`                                                                               |
 | `Alternative_context` | The alternative leadership context if `Coding_ambiguity` is `True` otherwise empty                                                                   |
-
 
 ---
 
@@ -120,7 +118,6 @@ Run notebooks in order. After changes to source data or functions, restart the k
 
 ---
 
-
 **Implementation references used during workflow development:**
 
 - [Financial-RoBERTa model card](https://huggingface.co/soleimanian/financial-roberta-large-sentiment)
@@ -128,7 +125,7 @@ Run notebooks in order. After changes to source data or functions, restart the k
 - [Hugging Face tokenizer documentation](https://huggingface.co/docs/transformers/main_classes/tokenizer)
 - [Hugging Face model loading and sequence classification](https://huggingface.co/docs/transformers/model_doc/auto)
 - [pandas DataFrame documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
-- [scikit-learn Cohen's kappa documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html)
+- [scikit-learn Cohen&#39;s kappa documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html)
 - [scikit-learn confusion matrix documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
 - [statsmodels linear regression documentation](https://www.statsmodels.org/stable/regression)
 - [statsmodels robust covariance estimation](https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.RegressionResults.get_robustcov_results.html)
