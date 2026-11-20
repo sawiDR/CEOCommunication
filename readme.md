@@ -1,4 +1,5 @@
-# Leadership Context and Linguistic Sentiment in Annual Corporate Leadership Communication: Evidence from German and Japanese Sporting-Goods Companies
+# Leadership context and linguistic sentiment in annual corporate leadership communication: Evidence from German and Japanese sporting-goods companies
+
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](#requirements)
 
 **Author** : Saowalak De Rossi
@@ -28,9 +29,9 @@ CEOCommunication/
 │   ├── 01_data_exploration.ipynb   
 │   ├── 02_sentiment.ipynb 
 │   ├── 03_regression.ipynb  
-│   ├── 04_extension_intercoder_reliability.ipynb              
-│   ├── 05_extension_sentiment_analysis.ipynb           
-├── results/                                           
+│   ├── 04_extension_intercoder_reliability.ipynb            
+│   ├── 05_extension_sentiment_analysis.ipynb         
+├── results/                                         
 │   ├── figures/
 │   ├── tables/
 project
@@ -84,45 +85,7 @@ project
 | `Neutral`  | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
 | `Negative` | Unfavorable development, deterioration, failure or adverse outcome                                                              | Sales declined; a target was missed; jobs were cut                       |
 
----
 
-## BERT-based sentiment analysis
-
-The sentiment analysis is base on the BERT model. It performs inference with a pretrained model.
-The basic workflow:
-
-1. Load and validate the coded dataset
-2. Tokenize with the model's tokenizer, retaining punctuation and sentence structure
-3. Process each segment within the input limit as a single input
-4. Return one sentiment observation per original segement
-5. Save scores separately from the source dataset in a new dataset
-
-The basic output structure:
-
-| Output column        | Meaning                                              |
-| -------------------- | ---------------------------------------------------- |
-| `Sentiment_status` | Whether the row was scored or could not be processed |
-| `P_positive`       | Positive-class model probability                     |
-| `P_neutral`        | Neutral-class model probability                      |
-| `P_negative`       | Negative-class model probability                     |
-| `Sentiment_label`  | Highest-probability class                            |
-| `Sentiment_score`  | `P_positive - P_negative`, ranging from −1 to +1  |
-| `Token_count`      | Number of model content tokens                       |
-| `Chunk_count`      | Number of internal model inputs                      |
-
----
-
-## Regression framework
-
-For observation *i*, the thesis specifies:
-
-`Sentiment_i = α + β LeadershipContext_i + γ Country_i + ρ InformationValence_i + δ CommunicationType_i + λ Year_i + θ (LeadershipContext_i × Country_i) + ε_i`
-
-- **Outcome:** continuous `Sentiment_score` base on the Sentiment analysis output
-- **Main explanatory variables:** leadership context and country
-- **Country coding:** Germany = 0; Japan = 1
-- **Controls:** information valence, broad communication format and reporting year
-- **Interaction:** whether the context–sentiment association differs by country
 
 ---
 
@@ -178,8 +141,17 @@ Run notebooks in order. After changes to source data or functions, restart the k
 
 ---
 
+
 **Implementation references used during workflow development:**
 
+- [Financial-RoBERTa model card](https://huggingface.co/soleimanian/financial-roberta-large-sentiment)
 - [FinBERT model card](https://huggingface.co/ProsusAI/finbert)
 - [Hugging Face tokenizer documentation](https://huggingface.co/docs/transformers/main_classes/tokenizer)
+- [Hugging Face model loading and sequence classification](https://huggingface.co/docs/transformers/model_doc/auto)
+- [pandas DataFrame documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
+- [scikit-learn Cohen's kappa documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html)
+- [scikit-learn confusion matrix documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
 - [statsmodels linear regression documentation](https://www.statsmodels.org/stable/regression)
+- [statsmodels robust covariance estimation](https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.RegressionResults.get_robustcov_results.html)
+- [statsmodels weighted least squares documentation](https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.WLS.html)
+- [statsmodels joint F-test documentation](https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.RegressionResults.f_test.html)
