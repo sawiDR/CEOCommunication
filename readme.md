@@ -65,27 +65,6 @@ project
 | `Coding_ambiguity`    | `true` if there is another Leadership context option otherwise `false`                                                                               |
 | `Alternative_context` | The alternative leadership context if `Coding_ambiguity` is `True` otherwise empty                                                                   |
 
-**Leadership contexts**
-
-| Code       | Context                                | Primary focus                                                                                                        |
-| ---------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `PERF`   | Business Performance & Achievements    | Realized financial or operational results, growth market-share achievements, records and completed milestones        |
-| `STRAT`  | Strategy, Growth & Future Direction    | Future objectives, priorities, investment plans, expansion, transformation and resource allocation                   |
-| `MARKET` | Product, Brand & Market                | Products, innovation, brands, consumers, athletes, retailers, marketing, distribution and commercial market dynamics |
-| `CHALL`  | Challenges, Crisis & Adaptation        | Problems, threats, uncertainty, disruptions and responses to adverse internal or external conditions                 |
-| `PEOPLE` | People & Organization                  | Employees, talent, management, organizational structure, workplace practices and corporate culture                   |
-| `STAKE`  | Stakeholders, Society & Sustainability | Societal and environmental impact, stakeholder relationships, human rights and broader responsibility                |
-| `OTHER`  | Other Leadership Communication         | Communication whose primary purpose does not correspond to any substantive category.                                 |
-
- **Information valence**
-
-| Label        | Interpretation                                                                                                                  | Illustrative case                                                        |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `Positive` | Favorable realized development, improvement, achievement or outcome                                                             | Revenue increased; emissions fell; an operational problem was resolved   |
-| `Neutral`  | No clear directional outcome, primarily a plan or commitment, or positive and negative information without a dominant direction | A future target; a current situation; balanced improvements and setbacks |
-| `Negative` | Unfavorable development, deterioration, failure or adverse outcome                                                              | Sales declined; a target was missed; jobs were cut                       |
-
-
 
 ---
 
