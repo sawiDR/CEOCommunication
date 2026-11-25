@@ -1,0 +1,17 @@
+model,SE,term,coefficient,p
+Financial-RoBERTa,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.CHALL]",-1.9031755242423785,0.005196723765753134
+Financial-RoBERTa,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.MARKET]",-0.378476897447481,0.4123744705565535
+Financial-RoBERTa,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.PEOPLE]",-1.3426457890704222,0.01875767963848774
+Financial-RoBERTa,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.STAKE]",-1.3997037771204437,0.023668053826008242
+Financial-RoBERTa,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.STRAT]",-0.9922207162303845,0.09610674705297631
+Financial-RoBERTa,clustered SEs,"C(country, Treatment(reference=""Germany""))[T.Japan]",0.902543840998297,0.0030803464761274286
+Financial-RoBERTa,clustered SEs,"C(valence, Treatment(reference=""neutral""))[T.negative]",-4.209536992162066,2.8225466235685352e-08
+Financial-RoBERTa,clustered SEs,"C(valence, Treatment(reference=""neutral""))[T.positive]",0.6875405716006252,0.0110546769577527
+FinBERT,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.CHALL]",-1.0217521803956742,0.024557313088627852
+FinBERT,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.MARKET]",-0.40840300451120115,0.24140145121043044
+FinBERT,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.PEOPLE]",-1.1396546426512635,0.0018677359295337134
+FinBERT,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.STAKE]",-1.4908798848760507,0.0008737331302468786
+FinBERT,clustered SEs,"C(context, Treatment(reference=""PERF""))[T.STRAT]",-0.6623251602119489,0.04493015007014688
+FinBERT,clustered SEs,"C(country, Treatment(reference=""Germany""))[T.Japan]",0.27371591060320505,0.40280432485217255
+FinBERT,clustered SEs,"C(valence, Treatment(reference=""neutral""))[T.negative]",-3.9722256600056634,0.001887965635409968
+FinBERT,clustered SEs,"C(valence, Treatment(reference=""neutral""))[T.positive]",0.43016224199754766,0.0735191895277171

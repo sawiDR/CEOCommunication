@@ -1,0 +1,24 @@
+company,communicator_name,year,n,roberta_mean,finbert_mean
+adidas,Bjørn Gulden,2022,26,0.245,0.159
+adidas,Bjørn Gulden,2023,18,0.889,0.46
+adidas,Bjørn Gulden,2024,20,0.612,0.327
+adidas,Bjørn Gulden,2025,16,0.756,0.39
+adidas,Kasper Rorsted,2020,20,0.64,0.424
+adidas,Kasper Rorsted,2021,14,0.859,0.607
+asics,Mitsuyuki Tominaga,2023,21,0.794,0.519
+asics,Motoi Oyama,2020,37,0.582,0.381
+asics,Yasuhito Hirota,2021,18,0.834,0.59
+asics,Yasuhito Hirota,2022,20,0.856,0.491
+asics,Yasuhito Hirota,2024,14,0.723,0.398
+asics,Yasuhito Hirota,2025,15,0.952,0.734
+mizuno,Akito Mizuno,2021,9,0.549,0.419
+mizuno,Akito Mizuno,2022,7,0.614,0.369
+mizuno,Akito Mizuno,2023,7,0.572,0.599
+mizuno,Akito Mizuno,2024,7,0.554,0.427
+mizuno,Akito Mizuno,2025,13,0.802,0.391
+puma,Arne Freundt,2022,16,0.812,0.753
+puma,Arne Freundt,2023,18,0.58,0.77
+puma,Arne Freundt,2024,9,0.452,0.675
+puma,Arthur Hoeld,2025,14,0.57,0.432
+puma,Bjørn Gulden,2020,14,0.498,0.267
+puma,Bjørn Gulden,2021,13,0.383,0.285

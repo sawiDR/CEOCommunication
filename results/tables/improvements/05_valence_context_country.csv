@@ -1,0 +1,14 @@
+country,context,negative,neutral,positive,All
+Germany,CHALL,10,4,10,24
+Germany,MARKET,0,6,29,35
+Germany,PEOPLE,0,6,27,33
+Germany,PERF,5,7,41,53
+Germany,STAKE,0,2,8,10
+Germany,STRAT,0,26,17,43
+Japan,CHALL,4,12,3,19
+Japan,MARKET,1,9,6,16
+Japan,PEOPLE,0,9,11,20
+Japan,PERF,2,4,17,23
+Japan,STAKE,0,27,14,41
+Japan,STRAT,1,40,8,49
+All,,23,152,191,366

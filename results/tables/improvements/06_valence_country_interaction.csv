@@ -1,0 +1,3 @@
+model,test,F,p,df_num,df_den
+Financial-RoBERTa,Valence x Country,9.418456416539948,0.0011093473620629873,2,22.0
+FinBERT,Valence x Country,7.403463795407933,0.0034787582890763603,2,22.0
